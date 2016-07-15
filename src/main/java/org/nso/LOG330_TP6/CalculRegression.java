@@ -52,10 +52,12 @@ public class CalculRegression {
 
 		System.out.println("Liste des paires: \n");
 		
+		BufferedReader _br = null;
 		
-		
-		try (BufferedReader _br = new BufferedReader(new FileReader(fichierNombres))) 
+		try 
 		{
+			_br = new BufferedReader(new FileReader(fichierNombres));
+			
 			String _ligne;
 			
 			while ((_ligne = _br.readLine()) != null) 
