@@ -52,6 +52,7 @@ public class CalculRegression {
 
 		System.out.println("Liste des paires: \n");
 		
+		// resolve try resource
 		BufferedReader _br = null;
 		
 		try 
