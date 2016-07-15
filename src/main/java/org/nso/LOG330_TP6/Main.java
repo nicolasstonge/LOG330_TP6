@@ -1,4 +1,4 @@
-package org.nso.Regression;
+package org.nso.LOG330_TP6;
 
 public class Main {
 
@@ -6,7 +6,7 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		// Instance de la classe de calcul de regression lineaire
-		CalculRegression _calculateur = new CalculRegression("/LOG330_TP6/src/main/java/org/nso/Regression/Numbers.csv");
+		CalculRegression _calculateur = new CalculRegression("src/main/java/org/nso/LOG330_TP6/Numbers.csv");
 		
 		// Affichage de la pente de la droite
 		System.out.println("La pente est: "+_calculateur.calculPente());

@@ -5,7 +5,7 @@ package org.nso.LOG330_TP6;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.nso.Regression.CalculRegression;
+import org.nso.LOG330_TP6.CalculRegression;
 
 public class Tp6Test {
 
@@ -15,7 +15,7 @@ public class Tp6Test {
 	public static void initialise(){
 
 		// Instance de la classe de calcul de regression lineaire
-		_calculateur = new CalculRegression("/LOG330_TP6/src/main/java/org/nso/Regression/Numbers.csv");
+		_calculateur = new CalculRegression("src/main/java/org/nso/LOG330_TP6/Numbers.csv");
 	}
 	
 	@Test
