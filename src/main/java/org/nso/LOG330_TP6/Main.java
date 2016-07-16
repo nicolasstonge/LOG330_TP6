@@ -10,9 +10,9 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		CalculCorrel calcul = new CalculCorrel("src/main/java/org/nso/LOG330_TP6/Numbers.csv");
+		CalculVariance calcul = new CalculVariance("src/main/java/org/nso/LOG330_TP6/numbers.csv");
 		
-		System.out.println(calcul.CalculCorrelation());
+		System.out.println(calcul.CalculVar());
 	}
 
 }
