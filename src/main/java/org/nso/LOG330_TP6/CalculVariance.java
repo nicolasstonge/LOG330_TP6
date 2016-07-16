@@ -66,7 +66,6 @@ public class CalculVariance {
 
 		moyenne = sommation / (float)listNombres.size();
 
-		System.out.println("La moyenne est: "+moyenne+"\n");
 	}
 
 	public void CalculSommeDistanceCarre(){
