@@ -35,8 +35,12 @@ public class CalculVariance {
 		File fichierNombres = new File(filePath);
 		
 		listNombres = new ArrayList<Float>();
+		
+		BufferedReader br = null;
 
-		try (BufferedReader br = new BufferedReader(new FileReader(fichierNombres))) {
+		try  {
+			
+			br = new BufferedReader(new FileReader(fichierNombres));
 			String ligne;
 			while ((ligne = br.readLine()) != null) {
 
