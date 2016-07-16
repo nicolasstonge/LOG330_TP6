@@ -14,7 +14,6 @@ public class Tp6Test {
 	@BeforeClass
 	public static void initialise(){
 
-		// Instance de la classe de calcul de regression lineaire
 		_calculateur = new CalculVariance("src/main/java/org/nso/LOG330_TP6/numbers.csv");
 	}
 	
