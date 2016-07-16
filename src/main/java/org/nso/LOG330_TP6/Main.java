@@ -6,13 +6,10 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		// Instance de la classe de calcul de regression lineaire
-		CalculRegression _calculateur = new CalculRegression("src/main/java/org/nso/LOG330_TP6/Numbers.csv");
+		CalculEffort _calculateur = new CalculEffort("src/main/java/org/nso/LOG330_TP6/donnees.csv");
 		
-		// Affichage de la pente de la droite
-		System.out.println("La pente est: "+_calculateur.calculPente());
-		
-		// Affichage de la constante de la droite
-		System.out.println("La constante est: "+_calculateur.calculConstante());
+		// On fait le calcul de correlation.
+		System.out.println(_calculateur.calculCorrelation());
 	}
 
 }
