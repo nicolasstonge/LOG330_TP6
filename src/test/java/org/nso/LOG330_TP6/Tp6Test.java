@@ -21,6 +21,6 @@ public class Tp6Test {
 	@Test
 	public void firstTest(){
 		
-		Assert.assertEquals(1.8279325f, _calculateur.calculPente(), 0.0002); // true
+		Assert.assertEquals(1.7279325f, _calculateur.calculPente(), 0.0002); // true
 	}
 }
