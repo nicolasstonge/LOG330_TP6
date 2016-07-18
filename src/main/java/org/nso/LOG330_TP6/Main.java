@@ -12,7 +12,7 @@ public class Main {
 
 		CalculCorrel calcul = new CalculCorrel("src/main/java/org/nso/LOG330_TP6/Numbers.csv");
 		
-		System.out.println(calcul.CalculCorrelation());
+		System.out.println("La correlation est de : "+calcul.CalculCorrelation());
 	}
 
 }

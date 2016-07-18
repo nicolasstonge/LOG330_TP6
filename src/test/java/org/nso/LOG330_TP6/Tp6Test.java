@@ -15,6 +15,7 @@ public class Tp6Test {
 	public static void initialise(){
 
 		_calculateur = new CalculCorrel("src/main/java/org/nso/LOG330_TP6/Numbers.csv");
+		
 	}
 	
 	@BeforeClass
@@ -34,6 +35,7 @@ public class Tp6Test {
 		
 		initialise();
 		Assert.assertEquals(0.955920515400237, _calculateur.CalculCorrelation(), 0.002);
+		System.out.println("testHighCorrel Passed");
 	}
 	
 	@Test
@@ -41,6 +43,7 @@ public class Tp6Test {
 		
 		initialise2();
 		Assert.assertEquals(0.41263714873707874, _calculateur.CalculCorrelation(), 0.002);
+		System.out.println("testLowCorrel Passed");
 	}
 	
 	@Test
@@ -48,5 +51,6 @@ public class Tp6Test {
 		
 		initialise3();
 		Double.isNaN(_calculateur.CalculCorrelation());
+		System.out.println("testInvalidCorrel Passed");
 	}
 }
