@@ -37,6 +37,7 @@ public class Tp6Test {
 		
 		initialise();
 		Assert.assertEquals(1.7279325f, _calculateur.calculPente(), 0.0002);
+		System.out.println("testPositiveSlope Passed");
 	}
 	
 	@Test
@@ -44,6 +45,7 @@ public class Tp6Test {
 		
 		initialise2();
 		Assert.assertEquals(-1.0124706029891968, _calculateur.calculPente(), 0.0002);
+		System.out.println("testNegativeSlope Passed");
 	}
 	
 	@Test
@@ -51,5 +53,6 @@ public class Tp6Test {
 		
 		initialise3();
 		Float.isNaN(_calculateur.calculPente());
+		System.out.println("testNullSlope Passed");
 	}
 }

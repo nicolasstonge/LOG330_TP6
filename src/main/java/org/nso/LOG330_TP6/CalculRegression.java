@@ -49,8 +49,6 @@ public class CalculRegression {
 		_listNombresX = new ArrayList<Float>();
 		
 		_listNombresY = new ArrayList<Float>();
-
-		System.out.println("Liste des paires: \n");
 		
 		BufferedReader _br = null;
 		
@@ -86,8 +84,6 @@ public class CalculRegression {
 					_listNombresX.add(_chiffreX);
 					
 					_listNombresY.add(_chiffreY);
-				
-				System.out.println(_chiffreX+" ; "+_chiffreY+"\n");
 			}
 		} 
 		catch (IOException _e) 
