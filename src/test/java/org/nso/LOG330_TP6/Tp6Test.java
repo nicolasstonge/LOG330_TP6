@@ -44,7 +44,7 @@ public class Tp6Test {
 	public void testNegativeSlope(){
 		
 		initialise2();
-		Assert.assertEquals(-1.0124706029891968, _calculateur.calculPente(), 0.0002);
+		Assert.assertEquals(-1.1124706029891968, _calculateur.calculPente(), 0.0002);
 		System.out.println("testNegativeSlope Passed");
 	}
 	
