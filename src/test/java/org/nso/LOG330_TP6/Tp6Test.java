@@ -18,9 +18,38 @@ public class Tp6Test {
 		_calculateur = new CalculRegression("src/main/java/org/nso/LOG330_TP6/Numbers.csv");
 	}
 	
+	@BeforeClass
+	public static void initialise2(){
+
+		// Instance de la classe de calcul de regression lineaire
+		_calculateur = new CalculRegression("src/main/java/org/nso/LOG330_TP6/Numbers2.csv");
+	}
+	
+	@BeforeClass
+	public static void initialise3(){
+
+		// Instance de la classe de calcul de regression lineaire
+		_calculateur = new CalculRegression("src/main/java/org/nso/LOG330_TP6/Numbers3.csv");
+	}
+	
 	@Test
-	public void firstTest(){
+	public void testPositiveSlope(){
 		
-		Assert.assertEquals(1.7279325f, _calculateur.calculPente(), 0.0002); // true
+		initialise();
+		Assert.assertEquals(1.7279325f, _calculateur.calculPente(), 0.0002);
+	}
+	
+	@Test
+	public void testNegativeSlope(){
+		
+		initialise2();
+		Assert.assertEquals(-1.0124706029891968, _calculateur.calculPente(), 0.0002);
+	}
+	
+	@Test
+	public void testNullSlope(){
+		
+		initialise3();
+		Float.isNaN(_calculateur.calculPente());
 	}
 }
