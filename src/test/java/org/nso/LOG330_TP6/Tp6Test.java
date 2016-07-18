@@ -34,6 +34,7 @@ public class Tp6Test {
 		
 		initialise();
 		Assert.assertEquals(391417.88, _calculateur.CalculVar(), 0.2);
+		System.out.println("testHighVar Passed");
 	}
 	
 	@Test
@@ -41,6 +42,7 @@ public class Tp6Test {
 		
 		initialise2();
 		Assert.assertEquals(9.166666984558105, _calculateur.CalculVar(), 0.2);
+		System.out.println("testLowVar Passed");
 	}
 	
 	@Test
@@ -48,5 +50,6 @@ public class Tp6Test {
 		
 		initialise3();
 		Assert.assertEquals(0, _calculateur.CalculVar(), 0.2);
+		System.out.println("testNullVar Passed");
 	}
 }

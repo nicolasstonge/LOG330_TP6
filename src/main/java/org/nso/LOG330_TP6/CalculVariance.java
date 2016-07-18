@@ -51,12 +51,7 @@ public class CalculVariance {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("Liste des nombres: \n");
-		for (Float float1 : listNombres) {
-
-			System.out.println(float1);
-		}
-		System.out.println("");
+		
 	}
 
 	public void CalculMoyenne(){
@@ -92,11 +87,11 @@ public class CalculVariance {
 
 	}
 
-	public void CalculEcartType(){
+	public float CalculEcartType(){
 
 		ecartType = (float) Math.pow(variance, 0.5);
 		
-		System.out.println("L'ecart type est: "+ecartType+"\n");
+		return ecartType;
 
 	}
 
