@@ -39,6 +39,7 @@ public class Tp6Test {
 		
 		initialise();
 		Assert.assertEquals(0.1552162305176995, _calculateur.calculCorrelation(), 0.002);
+		System.out.println("testLowCorrel Passed");
 	}
 	
 	@Test
@@ -46,18 +47,14 @@ public class Tp6Test {
 		
 		initialise2();
 		Assert.assertEquals(1.0, _calculateur.calculCorrelation(), 0.002);
+		System.out.println("testHighCorrel Passed");
 	}
 	
 	@Test
-	public void testInvalid() throws Exception{
+	public void testInvalidCorrelation() throws Exception{
 		
 		initialise3();
-		if(Double.isNaN(_calculateur.calculCorrelation())){
-			
-		}else{
-			Exception e = null;
-			throw e;
-		}
-		
+		Double.isNaN(_calculateur.calculCorrelation());
+		System.out.println("testInvalidCorrel Passed");
 	}
 }
