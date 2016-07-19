@@ -14,14 +14,12 @@ public class Tp6Test {
 	@BeforeClass
 	public static void initialise(){
 
-		// Instance de la classe de calcul de regression lineaire
 		_calculateur = new CalculRegression("src/main/java/org/nso/LOG330_TP6/Numbers.csv");
 	}
 	
 	@BeforeClass
 	public static void initialise2(){
 
-		// Instance de la classe de calcul de regression lineaire
 		_calculateur = new CalculRegression("src/main/java/org/nso/LOG330_TP6/Numbers2.csv");
 	}
 	
